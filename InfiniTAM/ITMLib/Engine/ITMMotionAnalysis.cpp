@@ -5,6 +5,8 @@
 #include "../../Utils/KDtree/kdtree_search_eth.h"
 #include "../../Utils/PointsIO/PointsIO.h"
 
+#define INFLUENCE_RADIUS 0.1 //sqrt(0.04*0.04*3)
+
 using namespace ITMLib::Engine;
 
 ITMMotionAnalysis::ITMMotionAnalysis(const ITMRGBDCalib *calib, bool useControlPoints){

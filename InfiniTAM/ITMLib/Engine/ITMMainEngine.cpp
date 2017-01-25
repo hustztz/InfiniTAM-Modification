@@ -10,6 +10,8 @@
 using namespace ITMLib::Engine;
 using namespace ITMLib::Utils;
 
+#define CP_RESOLUTION 0.05 //0.025 or 2
+
 ITMMainEngine::ITMMainEngine(const ITMLibSettings *settings, const ITMRGBDCalib *calib, Vector2i imgSize_rgb, Vector2i imgSize_d)
 {
 	// create all the things required for marching cubes and mesh extraction

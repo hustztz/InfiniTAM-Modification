@@ -36,9 +36,6 @@ namespace ITMLib
 			ITMMotionAnalysis(const ITMRGBDCalib *calib, bool useControlPoints);
 			~ITMMotionAnalysis();
 
-			//const float INFLUENCE_RADIUS = sqrt(0.04*0.04*3);
-			const float INFLUENCE_RADIUS = 0.1;
-
 			void initialize(std::vector<Vector3f> &cpoints, std::vector<Vector3f> &cnormals, std::vector<bool> &visiblelist, std::vector<std::vector<unsigned int>> visibleNeighbors);
 			void optimizeEnergyFunctionNlopt(ITMFloatImage *newDepthImage, const std::vector<Vector3f> &visiblePoints, const std::vector<Vector3f> &visibleNormals);
 			void getCalib(ITMRGBDCalib *&calib);

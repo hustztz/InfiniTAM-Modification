@@ -147,10 +147,6 @@ namespace ITMLib
 			void findNeighborsInDepthMap(int x, int y, int scale, std::vector<Vector2i> &pos_s);
 
 			Vector2i trackedImageSize;//Hao added it
-			//const float CP_RESOLUTION = 0.025;//Hao added it
-			const float CP_RESOLUTION = 0.05;//Hao added it
-			//const float CP_RESOLUTION = 2;//Hao added it
-			const float INFLUENCE_RADIUS = 0.03;//Hao added it
 			std::vector<Vector3f> cpoints;
 			std::vector<Vector3f> cnormals;
 			std::vector<Transformation> accumTfs;
